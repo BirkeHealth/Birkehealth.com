@@ -65,7 +65,7 @@
     function fieldError(name, msg) {
       var el = form.elements[name];
       if (!el) return;
-      var group = el.closest(".form-group, .quote-consent");
+      var group = el.closest(".form-group, .form-field, .quote-consent");
       if (!group) return;
       var box = group.querySelector(".field-error");
       if (msg) {
